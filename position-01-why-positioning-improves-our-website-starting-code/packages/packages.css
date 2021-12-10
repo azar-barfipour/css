@@ -16,13 +16,22 @@ main {
     /* border-color: #ff5454 !important; */
 }
 
+
 .package a {
     text-decoration: none;
     color: inherit;
     display: block;
     padding: 32px;
+    position: relative;
 }
-
+.package__badge{
+    position: absolute;
+    top:0;
+    right: 40px;
+    color: #fff;
+    background-color: #ff5454;
+    padding: 0.5rem;
+}
 .package__subtitle {
     color: #979797;
 }
