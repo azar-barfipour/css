@@ -1,0 +1,63 @@
+
+.nav{
+    // $color-primary: magenta; //overwriting the property but others uses from the global one
+    background-color: $color-primary;
+    ul li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $color-secondary;
+
+        &:hover{
+            color: $color-tertiary
+        }
+    }  
+}
+//maxin
+
+// @mixin headingStyles($fontSize){
+//     font-size: $fontSize;
+//     color: $color-secondary;
+//     text-align: center;
+// }
+
+// @mixin transition($param...) {
+//     transition: $param;
+// }
+
+
+// .banner h1{
+//     @include headingStyles($font-lg)
+// }
+// .footer h3{
+//     @include headingStyles($font-md);
+//     @include transition(color .5s, background-color 1s);
+
+//     &:hover{
+//         color: $color-tertiary;
+//         background-color: $color-primary;
+//     }
+// }
+
+//extend
+.heading{
+    color: $color-primary;
+    font-size: $font-lg;
+    background-color: $color-secondary;
+    text-align: center;
+}
+.banner h1{
+    @extend .heading;
+
+    &:hover{
+        background-color: green;
+    }
+}
+.footer h3{
+@extend h1;
+    }
+
+    //import & partials
+

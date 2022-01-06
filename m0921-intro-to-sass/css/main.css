@@ -9,11 +9,14 @@
     .nav a:hover {
       color: royalblue; }
 
-.banner h1 {
+.heading, .banner h1, .banner .footer h3, .footer .banner h3 {
   color: orange;
+  font-size: 40px;
+  background-color: gray;
   text-align: center; }
 
+.banner h1:hover, .banner .footer h3:hover, .footer .banner h3:hover {
+  background-color: green; }
+
 .footer h3 {
-  font-size: 30px;
-  color: royalblue;
-  text-align: center; }
+  font-style: italic; }
